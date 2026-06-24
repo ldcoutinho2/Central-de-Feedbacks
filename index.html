@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resultados Reais | MidiaNetDigital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #05080f;
+      color: #fff;
+      padding-bottom: 30px;
+    }
+    header {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1b2230;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #d7ff27;
+    }
+    .badge {
+      border: 1px solid #263244;
+      padding: 10px 15px;
+      border-radius: 30px;
+      font-size: 14px;
+    }
+    .hero {
+      text-align: center;
+      padding: 35px 18px 20px;
+    }
+    .hero h1 {
+      font-size: 34px;
+      line-height: 1.1;
+    }
+    .hero span { color: #d7ff27; }
+    .hero p {
+      color: #b9c0cc;
+      margin-top: 12px;
+      font-size: 16px;
+    }
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .benefit {
+      background: #0d111c;
+      border: 1px solid #1d2738;
+      border-radius: 16px;
+      padding: 16px;
+      text-align: center;
+      font-weight: bold;
+    }
+    section {
+      max-width: 1100px;
+      margin: 25px auto;
+      padding: 0 18px;
+    }
+    h2 {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+    .carousel {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 15px;
+    }
+    .carousel::-webkit-scrollbar { height: 6px; }
+    .carousel::-webkit-scrollbar-thumb {
+      background: #d7ff27;
+      border-radius: 10px;
+    }
+    .video-card, .print-card {
+      min-width: 210px;
+      max-width: 210px;
+      background: #111827;
+      border: 1px solid #253044;
+      border-radius: 18px;
+      overflow: hidden;
+      scroll-snap-align: start;
+    }
+    video, .print-card img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      display: block;
+    }
+    .caption {
+      padding: 12px;
+      font-size: 14px;
+      color: #e8e8e8;
+    }
+    .trust {
+      max-width: 1050px;
+      margin: 35px auto;
+      padding: 0 18px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .trust div {
+      background: #0d111c;
+      border: 1px solid #1d2738;
+      padding: 18px;
+      border-radius: 16px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .whatsapp-box {
+      max-width: 1000px;
+      margin: 35px auto;
+      background: #0d111c;
+      border: 1px solid #1d2738;
+      border-radius: 22px;
+      padding: 25px;
+      text-align: center;
+    }
+    .whatsapp-box h2 {
+      font-size: 28px;
+    }
+    .whatsapp-box span {
+      color: #d7ff27;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 18px;
+      background: #18c243;
+      color: #fff;
+      padding: 16px 28px;
+      border-radius: 35px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 17px;
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      margin-top: 35px;
+      font-size: 14px;
+    }
+    @media(max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .hero h1 {
+        font-size: 29px;
+      }
+      .benefits {
+        grid-template-columns: 1fr;
+      }
+      .trust {
+        grid-template-columns: 1fr;
+      }
+      .video-card, .print-card {
+        min-width: 75%;
+        max-width: 75%;
+      }
+      video, .print-card img {
+        height: 420px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">MidiaNetDigital</div>
+  <div class="badge">👥 Mais de 10.000 clientes atendidos</div>
+</header>
+
+<div class="hero">
+  <h1>Resultados <span>reais</span> de clientes</h1>
+  <p>Confira vídeos e feedbacks de quem já impulsionou seus perfis conosco.</p>
+</div>
+
+<div class="benefits">
+  <div class="benefit">🛡️ Garantia de 30 dias</div>
+  <div class="benefit">🔄 Reposição inclusa</div>
+  <div class="benefit">⚡ Entrega rápida</div>
+  <div class="benefit">💬 Atendimento humanizado</div>
+</div>
+
+<section>
+  <h2>🎥 Depoimentos em vídeo</h2>
+  <div class="carousel">
+
+    <div class="video-card">
+      <video controls poster="thumb1.jpg">
+        <source src="video1.mp4" type="video/mp4">
+      </video>
+      <div class="caption">Cliente satisfeito! Entrega rápida demais 🔥</div>
+    </div>
+
+    <div class="video-card">
+      <video controls poster="thumb2.jpg">
+        <source src="video2.mp4" type="video/mp4">
+      </video>
+      <div class="caption">Chegou tudo certo! Podem confiar ✅</div>
+    </div>
+
+    <div class="video-card">
+      <video controls poster="thumb3.jpg">
+        <source src="video3.mp4" type="video/mp4">
+      </video>
+      <div class="caption">Melhor preço e atendimento excelente 🚀</div>
+    </div>
+
+    <div class="video-card">
+      <video controls poster="thumb4.jpg">
+        <source src="video4.mp4" type="video/mp4">
+      </video>
+      <div class="caption">Já é minha terceira compra 👏</div>
+    </div>
+
+    <div class="video-card">
+      <video controls poster="thumb5.jpg">
+        <source src="video5.mp4" type="video/mp4">
+      </video>
+      <div class="caption">Seguidores reais e entrega segura 🙌</div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>💬 Feedbacks de clientes</h2>
+  <div class="carousel">
+
+    <div class="print-card"><img src="print1.jpg"><div class="caption">Chegaram tudo certinho aqui!</div></div>
+    <div class="print-card"><img src="print2.jpg"><div class="caption">Em menos de 1 hora começou a chegar 🔥</div></div>
+    <div class="print-card"><img src="print3.jpg"><div class="caption">Já fez diferença no perfil!</div></div>
+    <div class="print-card"><img src="print4.jpg"><div class="caption">Terceira compra e sempre perfeito!</div></div>
+    <div class="print-card"><img src="print5.jpg"><div class="caption">Atendimento nota 10 👏</div></div>
+    <div class="print-card"><img src="print6.jpg"><div class="caption">Voltarei mais vezes 🙏</div></div>
+    <div class="print-card"><img src="print7.jpg"><div class="caption">Tudo brasileiro mesmo!</div></div>
+    <div class="print-card"><img src="print8.jpg"><div class="caption">Meu perfil ficou mais profissional</div></div>
+    <div class="print-card"><img src="print9.jpg"><div class="caption">Entrega super rápida</div></div>
+    <div class="print-card"><img src="print10.jpg"><div class="caption">Podem confiar!</div></div>
+
+  </div>
+</section>
+
+<div class="trust">
+  <div>🔒 100% Seguro<br><small>Não precisa de senha</small></div>
+  <div>👥 +10.000<br><small>Clientes satisfeitos</small></div>
+  <div>🏆 Resultados<br><small>Comprovados</small></div>
+</div>
+
+<div class="whatsapp-box">
+  <h2>Gostou dos <span>resultados?</span></h2>
+  <p>Volte para o WhatsApp e finalize seu pedido com nossa equipe.</p>
+  <a class="btn" href="https://wa.me/5521968068902">📲 VOLTAR PARA O WHATSAPP</a>
+</div>
+
+<footer>
+  MidiaNetDigital © 2026 - Resultados reais de clientes
+</footer>
+
+</body>
+</html>
